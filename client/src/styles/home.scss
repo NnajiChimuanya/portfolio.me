@@ -94,7 +94,7 @@
         margin-bottom: calc(100vh - 95vh);
       }
 
-      &:hover {
+      &:active {
         transition: 1s;
         transform: scale(1.1);
       }
