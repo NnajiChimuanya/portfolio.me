@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  top: 0;
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .moreIcon {
+    background-color: rgb(228, 225, 225);
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .subscribeDiv {
+    background-color: rgb(228, 225, 225);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: $avenirRegular;
+
+    p {
+      margin-left: 5px;
+      font-size: 16px;
+    }
+  }
+}
