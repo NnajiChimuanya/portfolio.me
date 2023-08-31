@@ -4,7 +4,7 @@ import Background from "../components/Background/Background";
 
 const Project = () => {
   return (
-    <div className="aboutPage">
+    <div className="projectPage">
       <Background />
       <Header />
     </div>

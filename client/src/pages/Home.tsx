@@ -8,6 +8,7 @@ import { SiHashnode } from "react-icons/si";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
+import Background from "../components/Background/Background";
 
 const Home = () => {
   return (
@@ -41,7 +42,11 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      {/* <div className="homePageContent">
+      <Background />
+
+      <Header />
+
+      <div className="homePageContent">
         <img className="image" src="me.jpg" alt="Nnaji Chimuanya" />
 
         <div className="socialMediaIcons">
@@ -80,7 +85,7 @@ const Home = () => {
         <Link to={"/project"} className="exploreButton">
           Explore &rarr;
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };
