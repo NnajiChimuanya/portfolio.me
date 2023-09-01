@@ -80,8 +80,6 @@ const Home = () => {
           </h5>
         </div>
 
-        <div className="languageAndTools"></div>
-
         <Link to={"/project"} className="exploreButton">
           Explore &rarr;
         </Link>
