@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -10,8 +10,11 @@ import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import Background from "../components/Background/Background";
 import More from "../components/More/More";
+import { PortfolioContext } from "../context/Context";
 
 const Home = () => {
+  const { state } = useContext(PortfolioContext);
+
   return (
     <div className="home">
       <Helmet>
@@ -47,7 +50,7 @@ const Home = () => {
 
       <Header />
 
-      <More />
+      {state.moreOptions ? <More /> : null}
 
       <div className="homePageContent">
         <img className="image" src="me.jpg" alt="Nnaji Chimuanya" />
