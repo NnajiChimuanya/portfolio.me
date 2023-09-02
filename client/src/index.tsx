@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "../src/styles/index.scss";
+import { PortfolioContextProvider } from "./context/Context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,7 +11,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <PortfolioContextProvider>
+        <App />
+      </PortfolioContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

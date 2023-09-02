@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import Background from "../components/Background/Background";
+import More from "../components/More/More";
 
 const Home = () => {
   return (
@@ -45,6 +46,8 @@ const Home = () => {
       <Background />
 
       <Header />
+
+      <More />
 
       <div className="homePageContent">
         <img className="image" src="me.jpg" alt="Nnaji Chimuanya" />
