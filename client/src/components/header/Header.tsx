@@ -8,16 +8,20 @@ const Header = () => {
 
   const handleShowMore = () => {
     dispatch({ type: "SET_MOREOPTIONS", payload: !state.moreOptions });
-    console.log(state.moreOptions);
+  };
+
+  const handleShowSubscribe = () => {
+    dispatch({ type: "SET_SUBSCRIBEOPTION", payload: !state.subscribe });
+    console.log(state.subscribe);
   };
 
   return (
     <div className="header">
-      <div className="moreIcon">
-        <GrMore onClick={handleShowMore} />
+      <div className="moreIcon" onClick={handleShowMore}>
+        <GrMore />
       </div>
 
-      <div className="subscribeDiv">
+      <div className="subscribeDiv" onClick={handleShowSubscribe}>
         <BsBellFill />
         <p>Subscribe</p>
       </div>

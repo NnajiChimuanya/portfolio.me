@@ -6,12 +6,11 @@ const More = () => {
 
   const handleShowMore = () => {
     dispatch({ type: "SET_MOREOPTIONS", payload: !state.moreOptions });
-    console.log(state.moreOptions);
   };
 
   return (
     <div onClick={handleShowMore} className="moreModalContainer">
-      <div className="moreModal"></div>
+      <div className="moreModal">MMore</div>
     </div>
   );
 };

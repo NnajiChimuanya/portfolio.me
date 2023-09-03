@@ -11,6 +11,7 @@ import Header from "../components/header/Header";
 import Background from "../components/Background/Background";
 import More from "../components/More/More";
 import { PortfolioContext } from "../context/Context";
+import Subscribe from "../components/Subscribe/Subscribe";
 
 const Home = () => {
   const { state } = useContext(PortfolioContext);
@@ -51,6 +52,8 @@ const Home = () => {
       <Header />
 
       {state.moreOptions ? <More /> : null}
+
+      {state.subscribe ? <Subscribe /> : null}
 
       <div className="homePageContent">
         <img className="image" src="me.jpg" alt="Nnaji Chimuanya" />

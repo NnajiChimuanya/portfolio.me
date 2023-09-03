@@ -9,7 +9,7 @@ type Action =
     }
   | {
       type: "SET_SUBSCRIBEOPTION";
-      payload: string[];
+      payload: boolean;
     };
 
 interface ContextProviderProps {
@@ -34,7 +34,7 @@ const reducer = (state: InitialState, action: Action) => {
     case "SET_SUBSCRIBEOPTION":
       return {
         ...state,
-        subscribeOptions: payload,
+        subscribe: payload,
       };
 
     default:
