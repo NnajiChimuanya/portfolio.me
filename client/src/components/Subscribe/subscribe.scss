@@ -1,13 +1,11 @@
 .subscribeModalContainer {
   position: absolute;
   top: 0;
-  z-index: 150;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.7);
 
   @media screen and (min-width: 800px) {
     display: flex;
@@ -15,10 +13,69 @@
     justify-content: center;
   }
 
+  .subscribeModalOverlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 150;
+  }
+
   .subscribeModal {
     height: 400px;
     width: 90vw;
     background-color: white;
     border-radius: 10px 10px 0px 0px;
+    z-index: 250;
+
+    @media screen and (min-width: 800px) {
+      width: 50vw;
+    }
+
+    .close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+
+      .closeIcon {
+        cursor: pointer;
+      }
+    }
+
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .subscribeImage {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+      }
+
+      h4 {
+        font-family: $avenirBold;
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-family: $avenirRegular;
+        color: rgb(102, 102, 102);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      input {
+        margin-top: 20px;
+        height: 40px;
+        width: 300px;
+        border: 0px;
+        outline: none;
+        background-color: rgba(169, 169, 169, 0.5);
+      }
+    }
   }
 }
