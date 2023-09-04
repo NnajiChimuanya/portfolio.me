@@ -74,7 +74,13 @@
         width: 300px;
         border: 0px;
         outline: none;
+        padding-left: 10px;
         background-color: rgba(169, 169, 169, 0.5);
+
+        &::placeholder {
+          margin-left: 50px;
+          font-family: $avenirBold;
+        }
       }
     }
   }

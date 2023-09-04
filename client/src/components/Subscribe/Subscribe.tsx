@@ -28,6 +28,10 @@ const Subscribe = () => {
           <h4>Subscribe to Nnaji Chimuanya</h4>
           <p>Stay up to date with everything important</p>
           <input type={"text"} placeholder="Email" />
+
+          <label>
+            <input type={"checkbox"} /> I agree
+          </label>
         </div>
       </div>
     </div>
