@@ -9,7 +9,8 @@ const More = () => {
   };
 
   return (
-    <div onClick={handleShowMore} className="moreModalContainer">
+    <div className="moreModalContainer">
+      <div className="moreModalOverlay" onClick={handleShowMore}></div>
       <div className="moreModal">MMore</div>
     </div>
   );
