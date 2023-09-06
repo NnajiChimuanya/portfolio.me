@@ -29,9 +29,7 @@ const Subscribe = () => {
           <p>Stay up to date with everything important</p>
           <input type={"text"} placeholder="Email" />
 
-          <label>
-            <input type={"checkbox"} /> I agree
-          </label>
+          <button className="subscribeButton">Subscribe</button>
         </div>
       </div>
     </div>
