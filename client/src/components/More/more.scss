@@ -26,6 +26,14 @@
   .moreModal {
     height: 400px;
     width: 90vw;
+
+
+    @media screen and (min-width: 800px) {
+    width: 500px;
+    }
+
+
+
     background-color: white;
     border-radius: 10px 10px 0px 0px;
     z-index: 200;
