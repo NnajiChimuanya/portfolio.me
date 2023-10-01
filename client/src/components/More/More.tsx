@@ -11,7 +11,7 @@ const More = () => {
   return (
     <div className="moreModalContainer">
       <div className="moreModalOverlay" onClick={handleShowMore}></div>
-      <div className="moreModal">MMore</div>
+      <div className="moreModal">More</div>
     </div>
   );
 };
